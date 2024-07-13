@@ -352,3 +352,11 @@ msgstr ""
 msgctxt "#30897"
 msgid "Clear cache…"
 msgstr ""
+
+msgctxt "#30898"
+msgid "Streamz"
+msgstr ""
+
+msgctxt "#30899"
+msgid "VTM GO+"
+msgstr ""

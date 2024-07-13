@@ -99,7 +99,7 @@ class Category:
 class Teaser:
     """ Defines a Teaser """
 
-    def __init__(self, detail_id=None, name=None, description=None, poster=None, thumb=None, fanart=None, geoblocked=None):
+    def __init__(self, detail_id=None, name=None, description=None, poster=None, thumb=None, fanart=None, geoblocked=None, streamz=None, vtmgoplus=None):
         """
         :type detail_id: str
         :type name: str
@@ -115,6 +115,8 @@ class Teaser:
         self.thumb = thumb
         self.fanart = fanart
         self.geoblocked = geoblocked
+        self.streamz = streamz
+        self.vtmgoplus = vtmgoplus
 
     def __repr__(self):
         return "%r" % self.__dict__

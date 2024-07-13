@@ -523,15 +523,23 @@ class VtmGo:
         # if movie:
         #     return movie
         geoblocked=None
+        streamz=None
+        vtmgoplus=None
         if item.get('overlayImageUrl'):
             if '242844604' in item.get('overlayImageUrl'):
                 geoblocked=True
+            if '242844599' in item.get('overlayImageUrl'):
+                streamz=True
+            if '242844600' in item.get('overlayImageUrl'):
+                vtmgoplus=True
 
         return Teaser(
             detail_id=item.get('detailId'),
             name=item.get('title'),
             thumb=item.get('imageUrl'),
-            geoblocked=geoblocked
+            geoblocked=geoblocked,
+            streamz=streamz,
+            vtmgoplus=vtmgoplus
         )
 
     def _parse_detail_teaser(self, item, cache=CACHE_ONLY):

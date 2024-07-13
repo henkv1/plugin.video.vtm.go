@@ -166,6 +166,14 @@ class Menu:
             plot += kodiutils.localize(30207)  # Geo-blocked
             plot += '\n'
 
+        if hasattr(obj, 'streamz') and obj.streamz:
+            plot += kodiutils.localize(30898)  # Streamz
+            plot += '\n'
+
+        if hasattr(obj, 'vtmgoplus') and obj.vtmgoplus:
+            plot += kodiutils.localize(30899)  # VTM GO+
+            plot += '\n'
+
         if hasattr(obj, 'description') and obj.description:
             plot += obj.description
             plot += '\n\n'
