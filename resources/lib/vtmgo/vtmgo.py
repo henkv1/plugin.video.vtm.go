@@ -532,6 +532,10 @@ class VtmGo:
                 streamz=True
             if '242844600' in item.get('overlayImageUrl'):
                 vtmgoplus=True
+            if '242844598' in item.get('overlayImageUrl'):
+                streamz=True
+            if '248317222' in item.get('overlayImageUrl'):
+                vtmgoplus=True
 
         return Teaser(
             detail_id=item.get('detailId'),
