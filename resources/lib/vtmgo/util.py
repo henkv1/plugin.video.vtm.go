@@ -18,7 +18,7 @@ _LOGGER = logging.getLogger(__name__)
 SESSION = requests.Session()
 SESSION.headers = {
     'User-Agent': 'VTM_GO/17.240626 (be.vmma.vtm.zenderapp; build:19069; Android 28) okhttp/4.12.0',
-    'x-app-version': '17',
+    'x-app-version': '18',
     'x-persgroep-mobile-app': 'true',
     'x-persgroep-os': 'android',
     'x-persgroep-os-version': '28',
