@@ -171,7 +171,7 @@ class VtmGoStream:
                                   headers={
                                       'Accept': 'application/json',
                                       'x-api-key': self._V6_API_KEY,
-                                      'Popcorn-SDK-Version': '7',
+                                      'Popcorn-SDK-Version': '8',
                                       'Authorization': 'Bearer ' + player_token,
                                   })
 
